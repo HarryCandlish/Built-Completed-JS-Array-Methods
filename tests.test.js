@@ -7,3 +7,10 @@ test("join two or more arrays, and return a copy of the joined arrays", () => {
   const actual = test1.joinArrays(array1, array2);
   expect(actual).toEqual(expected);
 });
+
+test("overwrite an item in an array with an existing item of the array", () => {
+  const array = ["a", "b", "c", "d", "e"];
+  const expected = ["e", "b", "c", "d", "e"];
+  const actual = test1.overWriteItem(array);
+  expect(actual).toEqual(expected);
+});

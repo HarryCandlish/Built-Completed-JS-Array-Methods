@@ -1,6 +1,6 @@
 const test1 = require("./index");
 
-test("join two or more arrays, and return a copy of the joined arrays", () => {
+test("join two or more arrays using (concat()) to return a copy of the joined arrays", () => {
   const array1 = [1, 2, 3, 4, 5];
   const array2 = [6, 7, 8, 9, 10];
   const expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -8,9 +8,16 @@ test("join two or more arrays, and return a copy of the joined arrays", () => {
   expect(actual).toEqual(expected);
 });
 
-test("overwrite an item in an array with an existing item of the array", () => {
+test("use (copyWithin()) method to overwrite item in an array", () => {
   const array = ["a", "b", "c", "d", "e"];
   const expected = ["e", "b", "c", "d", "e"];
   const actual = test1.overWriteItem(array);
+  expect(actual).toEqual(expected);
+});
+
+test("use (Object.entries()) method to return an Array Iterator Object with key/value pairs", () => {
+  const array = ["Ibex"];
+  const expected = [["0", "Ibex"]];
+  const actual = test1.entries(array);
   expect(actual).toEqual(expected);
 });

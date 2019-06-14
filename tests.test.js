@@ -60,3 +60,10 @@ test("use findIndex() to find the first element in the array that has a value le
   const actual = test1.findIndexNumber(array, value);
   expect(actual).toEqual(expected);
 });
+
+test("use forEach() to display all elements in an array", () => {
+  const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const actual = test1.eachFor(array);
+  expect(actual).toEqual(expected);
+});

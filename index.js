@@ -33,6 +33,15 @@ function findIndexNumber(array, value) {
   return x;
 }
 
+function eachFor(array) {
+  x = [];
+  y = array.forEach(n => {
+    x.push(n);
+  });
+
+  return x;
+}
+
 module.exports = {
   joinArrays,
   overWriteItem,
@@ -41,5 +50,6 @@ module.exports = {
   fillArray,
   filterArray,
   findNumber,
-  findIndexNumber
+  findIndexNumber,
+  eachFor
 };

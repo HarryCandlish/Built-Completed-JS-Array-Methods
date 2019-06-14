@@ -37,3 +37,10 @@ test("use fill() to fill the array with a static value", () => {
   const actual = test1.fillArray(array, value);
   expect(actual).toEqual(expected);
 });
+
+test("use filter() to filter out the numbers in the array divisible by 3", () => {
+  const array = [10, 12, 14, 16, 18, 20, 22, 24];
+  const expected = [12, 18, 24];
+  const actual = test1.filterArray(array);
+  expect(actual).toEqual(expected);
+});

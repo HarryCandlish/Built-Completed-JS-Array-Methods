@@ -18,10 +18,16 @@ function fillArray(array, value) {
   return array.fill(value, 1, 2);
 }
 
+function filterArray(array) {
+  x = array.filter(n => n % 3 === 0);
+  return x;
+}
+
 module.exports = {
   joinArrays,
   overWriteItem,
   entries,
   everyAge,
-  fillArray
+  fillArray,
+  filterArray
 };

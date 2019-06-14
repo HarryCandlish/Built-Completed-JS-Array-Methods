@@ -52,3 +52,11 @@ test("use find() to find the first number higher than (value) parameter", () => 
   const actual = test1.findNumber(array, value);
   expect(actual).toEqual(expected);
 });
+
+test("use findIndex() to find the first element in the array that has a value less the value or more", () => {
+  const array = [30, 100, 200, 500, 1000];
+  const value = 100;
+  const expected = 1;
+  const actual = test1.findIndexNumber(array, value);
+  expect(actual).toEqual(expected);
+});

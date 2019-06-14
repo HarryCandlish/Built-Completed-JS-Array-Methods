@@ -24,7 +24,12 @@ function filterArray(array) {
 }
 
 function findNumber(array, value) {
-  x = array.find(n => n >= value + 1);
+  x = array.find(n => n > value);
+  return x;
+}
+
+function findIndexNumber(array, value) {
+  x = array.findIndex(n => n >= value);
   return x;
 }
 
@@ -35,5 +40,6 @@ module.exports = {
   everyAge,
   fillArray,
   filterArray,
-  findNumber
+  findNumber,
+  findIndexNumber
 };

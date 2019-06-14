@@ -10,13 +10,18 @@ function entries(array) {
   return Object.entries(array);
 }
 
-function everyAge(array) {
-  return array.every(age => age >= 50);
+function everyAge(array, value) {
+  return array.every(age => age >= value);
+}
+
+function fillArray(array, value) {
+  return array.fill(value, 1, 2);
 }
 
 module.exports = {
   joinArrays,
   overWriteItem,
   entries,
-  everyAge
+  everyAge,
+  fillArray
 };

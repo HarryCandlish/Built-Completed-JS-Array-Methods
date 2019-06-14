@@ -24,7 +24,16 @@ test("use (Object.entries()) method to return an Array Iterator Object with key/
 
 test("check if all values in the ages array are 50 or over using (every())", () => {
   const array = [50, 54, 60, 76];
+  const value = 50;
   const expected = true;
-  const actual = test1.everyAge(array);
+  const actual = test1.everyAge(array, value);
+  expect(actual).toEqual(expected);
+});
+
+test("use fill() to fill the array with a static value", () => {
+  const array = [1, 2, 3, 4, 5, 6];
+  const value = 8;
+  const expected = [1, 8, 3, 4, 5, 6];
+  const actual = test1.fillArray(array, value);
   expect(actual).toEqual(expected);
 });

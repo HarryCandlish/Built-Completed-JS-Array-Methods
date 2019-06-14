@@ -23,11 +23,17 @@ function filterArray(array) {
   return x;
 }
 
+function findNumber(array, value) {
+  x = array.find(n => n >= value + 1);
+  return x;
+}
+
 module.exports = {
   joinArrays,
   overWriteItem,
   entries,
   everyAge,
   fillArray,
-  filterArray
+  filterArray,
+  findNumber
 };

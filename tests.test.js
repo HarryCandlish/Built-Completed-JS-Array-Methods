@@ -44,3 +44,11 @@ test("use filter() to filter out the numbers in the array divisible by 3", () =>
   const actual = test1.filterArray(array);
   expect(actual).toEqual(expected);
 });
+
+test("use find() to find the first number higher than (value) parameter", () => {
+  const array = [30, 100, 200, 500, 1000];
+  const value = 100;
+  const expected = 200;
+  const actual = test1.findNumber(array, value);
+  expect(actual).toEqual(expected);
+});

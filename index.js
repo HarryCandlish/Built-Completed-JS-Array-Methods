@@ -42,6 +42,11 @@ function eachFor(array) {
   return x;
 }
 
+function arrayIncludes(array, value) {
+  x = array.includes(value);
+  return x;
+}
+
 module.exports = {
   joinArrays,
   overWriteItem,
@@ -51,5 +56,6 @@ module.exports = {
   filterArray,
   findNumber,
   findIndexNumber,
-  eachFor
+  eachFor,
+  arrayIncludes
 };

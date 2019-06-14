@@ -67,3 +67,11 @@ test("use forEach() to display all elements in an array", () => {
   const actual = test1.eachFor(array);
   expect(actual).toEqual(expected);
 });
+
+test("use include() to check if the array has the (value)", () => {
+  const array = ["Ibex", "Tiger", "Mule", "Rhino"];
+  const value = "Ibex";
+  const expected = true;
+  const actual = test1.arrayIncludes(array, value);
+  expect(actual).toEqual(expected);
+});
